@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна</title>
+    <style>
+        /* Основний стиль сайту */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #df5c05;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #be4f04;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #df5c05;
+        }
+        .container {
+            max-width: 1200px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .content img {
+            width: 300px;
+            height: 333px;
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+        .content > div {
+            flex: 1 1 45%;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #df5c05;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* Адаптивність для мобільних пристроїв */
+        @media screen and (max-width: 992px) {
+            .content {
+                flex-direction: column;
+            }
+            .content > div {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Головна</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про мене</a>
+        <a href="hobbies.html">Мої захоплення</a>
+        <a href="university.html">Мій ЗВО</a>
+        <a href="profession.html">Моя майбутня професія</a>
+        <a href="group.html">Моя група</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="https://github.com/ваш-логін" target="_blank">GitHub</a> <!-- Додано посилання на GitHub -->
+    </nav>
+
+    <div class="container">
+        <h2>Детальна інформація про мене</h2>
+        <div class="content">
+            <div class="text">
+                <p>Всім привіт! Я, Олександр Закусило, радий бачити Вас на своєму сайті!
+                Навчаюсь в ЧНУ ім. Богдана Хмельницького, на третьому курсі, на спеціальність: "Середня освіта (Інформатика)".
+                Завжди готовий до нових знайомств, щоб вивчати щось нове разом!</p>
+            </div>
+            <div class="image-container">
+                <img src="D:\my-portfolio\images\myphoto.jpg" width="300" height="333" alt="Фото автора"> 
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Мій сайт</p>
+        <a href="https://github.com/SANYAFEED/prac1" target="prac1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="30" height="30">
+        </a> <!-- Додано іконку GitHub -->
+    </footer>
+
+</body>
+</html>
