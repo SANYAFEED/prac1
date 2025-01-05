@@ -1,0 +1,43 @@
+// scss/styles.scss
+
+// Змінні для стилів
+$primary-color: #df5c05;
+$secondary-color: #be4f04;
+$white-color: white;
+$font-family: Arial, sans-serif;
+
+// Основний стиль для body
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+// Стилі для header
+header {
+  background-color: $primary-color;
+  color: $white-color;
+  padding: 10px 0;
+  text-align: center;
+}
+
+// Стилі для навігації
+nav {
+  background-color: $secondary-color;
+  overflow: hidden;
+  
+  a {
+    float: left;
+    display: block;
+    color: $white-color;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+// Інші стилі (footer, .container і т.д.)
